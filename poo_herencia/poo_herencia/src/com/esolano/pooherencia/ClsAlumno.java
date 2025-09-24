@@ -6,6 +6,10 @@ public class ClsAlumno extends ClsPersona {
     private double notaCastellano;
     private double notaHistoria;
 
+    public ClsAlumno(){
+        System.out.println("Alumno: inicializando constructor...");
+    }
+
     public String getInstitucion() {
         return institucion;
     }
