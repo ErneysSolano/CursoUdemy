@@ -10,6 +10,17 @@ public class ClsPersona {
         System.out.println("Persona: inicializando constructor....");
     }
 
+    public ClsPersona(String nombre, String apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public ClsPersona(String nombre, String apellido, int edad){
+        this(nombre, apellido);
+        this.edad = edad;
+    }
+
+    //-------getter y setter --------------------------*/
     public String getNombre() {
         return nombre;
     }
@@ -40,5 +51,18 @@ public class ClsPersona {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String saludar(){
+        return "Hola que tal!";
+    }
+
+    @Override
+    public String toString() {
+        return  "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", email=" + email + '\'' +
+                ", saludo=" + this.saludar();
     }
 }
