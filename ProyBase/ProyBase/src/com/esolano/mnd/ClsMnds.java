@@ -18,7 +18,6 @@ public class ClsMnds {
 
     public ClsMnds() {
     }
-
     //---- getter ------
 
 
